@@ -1,12 +1,22 @@
-# Sistema de Monitoramento de Frequência para Empresas com Contrato de Aprendizagem
+<h1 align="center">Sistema de Monitoramento de Frequência</h1>
+
+<p align="center">
+  <img src="https://example.com/logo.png" alt="Logo" width="200" height="200">
+</p>
+
+<p align="center">
+  <strong>Uma solução eficiente para acompanhar a frequência de alunos em empresas com contrato de aprendizagem.</strong>
+</p>
+
+## Sobre o Projeto
 
 Este repositório contém o código-fonte de uma solução em PHP desenvolvida para a Unidade SENAI Juiz de Fora CFP José Fagundes Netto. O sistema foi projetado para auxiliar as empresas que possuem alunos com contrato de aprendizagem a monitorar a frequência desses alunos de forma eficiente e segura.
 
 ## Funcionalidades Principais
 
-- Cadastro de empresas: As empresas podem se cadastrar no sistema e ter acesso individualizado a um arquivo gerado mensalmente pela secretaria da escola.
-- Geração de arquivo mensal: A secretaria da escola envia o arquivo referente ao mês atual para o sistema, que fica disponível para consulta das empresas.
-- Acesso seguro: Cada empresa tem um único colaborador com acesso ao arquivo, garantindo a segurança das informações. A secretaria da escola também conta com dois funcionários com acessos distintos para realizar as mesmas funções.
+- **Cadastro de Empresas:** As empresas podem se cadastrar no sistema e ter acesso individualizado a um arquivo gerado mensalmente pela secretaria da escola.
+- **Geração de Arquivo Mensal:** A secretaria da escola envia o arquivo referente ao mês atual para o sistema, que fica disponível para consulta das empresas.
+- **Acesso Seguro:** Cada empresa tem um único colaborador com acesso ao arquivo, garantindo a segurança das informações. A secretaria da escola também conta com dois funcionários com acessos distintos para realizar as mesmas funções.
 
 ## Como Contribuir
 
@@ -21,3 +31,4 @@ Este repositório contém o código-fonte de uma solução em PHP desenvolvida p
 
 Este projeto foi desenvolvido em colaboração com a equipe da Unidade SENAI Juiz de Fora CFP José Fagundes Netto. Qualquer dúvida ou sugestão, sinta-se à vontade para entrar em contato conosco. Seu feedback é muito bem-vindo!
 
+</div>
