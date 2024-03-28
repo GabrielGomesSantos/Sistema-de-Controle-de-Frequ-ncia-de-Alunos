@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "frequencia";
+$dbname = "DB_frequencia";
 
 // Cria a conexão
 $conn = mysqli_connect($servername, $username, $password, $dbname);
