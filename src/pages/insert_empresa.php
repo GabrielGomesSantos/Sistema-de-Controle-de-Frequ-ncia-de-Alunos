@@ -15,10 +15,10 @@
             <label for="nome">Nome da empresa:</label><br>
             <input type="text" id="nome" name="nome" required><br>
 
-            <label for="cnpj">Autor:</label><br>
+            <label for="cnpj">cnpj:</label><br>
             <input type="text" id="cnpj" name="cnpj" required><br>
 
-            <label for="telefone">Ano de Publicação:</label><br>
+            <label for="telefone">telefone:</label><br>
             <input type="text" id="telefone" name="telefone" required><br><br>
 
             <input type="submit" value="Enviar">
