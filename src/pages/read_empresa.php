@@ -35,6 +35,8 @@
                     <th>NOME</th>
                     <th>TELEFONE</th>
                     <th>CNPJ</th>
+                    <th><a href='src/pages/send.php'><button class="button_acao">SEND ALL</button></a></th>
+                    
                 </tr>
                 
                 <?php }
@@ -60,6 +62,7 @@
                     <td onclick = "windows.location"><?php echo $row["nomeEmpresa"]; ?></td>
                     <td><?php echo $row["telefone"]; ?></td>
                     <td><?php echo $row["cnpj"]; ?></td>
+                    <td> <a href='src/pages/send.php?id=<?php echo $row["id"]; ?>'><button class="button_acao">SEND</button></a></td>
                 </tr>
 
                 <?php } ?>
