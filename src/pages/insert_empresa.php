@@ -23,6 +23,7 @@
 
             <input type="submit" value="Enviar">
         </form>
+        <a href="read_empresa.php">Voltar</a>
     
 </body>
 </html>
