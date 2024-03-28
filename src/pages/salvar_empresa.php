@@ -18,7 +18,7 @@
             echo "Error: " . $sql . "<br>" . mysqli_error($conn);
         }
 
-        header('Location: insert.php');
+        header('Location: insert_empresa.php');
     
     mysqli_close($conn);
 
