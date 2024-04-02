@@ -1,0 +1,142 @@
+*{
+    font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    height: 100vh;
+}
+
+form {
+    padding: 30px ;
+    padding-top: 20px;
+ 
+    display: flex;
+    flex-direction: column;
+    
+}
+header {
+    background-color: rgb(98, 98, 189);
+    color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.233);
+
+}
+.header1{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 6px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.233);
+    height: 15px;
+
+}
+header img {
+    width: 200px;
+}
+label, input, h1, select {
+    margin: 5px;
+}
+label, .inputtext {
+    font-size: 20px;
+}
+label {
+    margin-top: 15px;
+}
+
+
+h1{
+   
+    padding-bottom: 20px;
+    border-bottom: 2px rgba(128, 128, 128, 0.418) solid;
+    font-size: 40px;
+    
+}
+
+.content {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7%;
+    flex-direction: column;
+}
+.formulario{
+    
+     
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.233);
+    border-radius: 10px;
+   
+    
+
+}
+
+input {
+    display: flex;
+    border-radius: 9px;
+    border: 2px rgba(128, 128, 128, 0.418) solid;
+   
+    height: 30px;
+}
+.buttonsubmit {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.submit {
+    display: block;
+    
+    margin: 20px;
+
+    width:100px;
+
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.092) ;
+}
+
+.buttonsubmit input:hover {
+    border-color: rgb(137, 136, 136);
+    font-weight: bold;
+    color:rgb(137, 136, 136);
+   
+}
+.buttonsubmit input:active {
+    border-color: rgb(84, 84, 84);
+    font-weight: bold;
+    background-color: rgb(184, 184, 184);
+    color:rgb(84, 83, 83);
+}
+
+.confirmarident{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0px;
+    font-size: 35px;
+}
+h3 {
+    font-size: 14px;
+}
+select {
+    display: flex;
+    border-radius: 9px;
+    border: 2px rgba(128, 128, 128, 0.418) solid;
+    
+    height: 36px;
+}
+
+.container-senha {
+    position: relative;
+  }
+  .exibir-senha {
+    position: absolute;
+    right: 15px;
+    top: 70%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
