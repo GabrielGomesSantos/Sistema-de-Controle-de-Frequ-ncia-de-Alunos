@@ -53,7 +53,7 @@ h1{
     padding-bottom: 20px;
     border-bottom: 2px rgba(128, 128, 128, 0.418) solid;
     font-size: 40px;
-    
+    width: 300pt;
 }
 
 .content {
@@ -71,7 +71,6 @@ h1{
     flex-direction: column;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.233);
     border-radius: 10px;
-    
    
     
 
@@ -81,22 +80,20 @@ input {
     display: flex;
     border-radius: 9px;
     border: 2px rgba(128, 128, 128, 0.418) solid;
-   
-    height: 30px;
     width: 300pt;
-    
+    height: 30px;
 }
 .buttonsubmit {
     
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 .submit {
     display: block;
     
     margin: 20px;
-
+    margin-left: 5px;
     width:100px;
 
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.092) ;
@@ -143,3 +140,27 @@ select {
     transform: translateY(-50%);
     cursor: pointer;
   }
+
+
+button {
+    border: 2px rgba(128, 128, 128, 0.418) solid;
+    border-radius: 9px;
+    
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 30px;
+}
+
+button:hover {
+    border-color: rgb(137, 136, 136);
+    font-weight: bold;
+    color:rgb(137, 136, 136);
+   
+}
+button:active {
+    border-color: rgb(84, 84, 84);
+    font-weight: bold;
+    background-color: rgb(184, 184, 184);
+    color:rgb(84, 83, 83);
+}
