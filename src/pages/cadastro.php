@@ -10,9 +10,11 @@
 <<<<<<< Updated upstream
 =======
     <link rel="stylesheet" href="..\..\assets\css\style_cadastro.css">
-
     <?php include ('links_css.php') ?>
+<<<<<<< Updated upstream
 
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     <title>Document</title>
 
@@ -35,9 +37,18 @@
             <input type="text" id="usuario" name="usuario" required><br>
 =======
             
+<<<<<<< Updated upstream
             <h1>Cadastrar</h1>
             <label for="user">Usuario:</label>
             <input  class="inputtext" type="text" id="user" name="user" required>
+
+            <label for="password">Senha:</label>
+            <input class="inputtext" type="password" id="password" name="password" required>
+>>>>>>> Stashed changes
+=======
+            <h1>Cadastrar Usuarios</h1>
+            <label for="usuario">Usuario:</label>
+            <input  class="inputtext" type="text" id="usuario" name="usuario" required>
 
             <label for="password">Senha:</label>
             <input class="inputtext" type="password" id="password" name="password" required>
