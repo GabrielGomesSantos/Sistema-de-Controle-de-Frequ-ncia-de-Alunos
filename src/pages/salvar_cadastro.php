@@ -14,11 +14,13 @@
 
         if (mysqli_query($conn, $sql)) {
             echo "New record created successfully";
+            
+            header('Location: insert_empresa.php');
         } else {
             echo "Error: " . $sql . "<br>" . mysqli_error($conn);
         }
 
-        header('Location: insert_empresa.php');
+        
     
     mysqli_close($conn);
 

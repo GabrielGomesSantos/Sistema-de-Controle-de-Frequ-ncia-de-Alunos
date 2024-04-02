@@ -14,6 +14,9 @@ if (!$conn) {
 
 mysqli_set_charset($conn, "utf8");
 
+//Funçoes 
+
+
 function leitura(){
     $filename = 'documento.pdf';
 
@@ -29,10 +32,10 @@ function leitura(){
     }
 }
 
-function newFolder(){
+function newFolder($nome){
     
-    $diretorio = '../../empresas'; 
-    $nomeDiretorio = 'teste';
+    $diretorio = '../../companies/'; 
+    $nomeDiretorio = $nome;
 
     if (!is_dir($diretorio . '/' . $nomeDiretorio)) {
         if (mkdir($diretorio . '/' . $nomeDiretorio, 0777)) {
@@ -40,6 +43,50 @@ function newFolder(){
         } else {
             echo 'Erro ao criar o diretório';
         }
+    }
+}
+
+function criarDiretorioMensalComPDF($empresa) {
+
+    // Define o locale para português do Brasil
+    setlocale(LC_TIME, 'pt_BR.utf8');
+
+    $diretorioBase = "../../companies/{$empresa}";
+
+    // Obtém o nome do mês e o ano atual
+    $nomeMes = strftime('%B'); // %B retorna o nome completo do mês
+    $ano = date('Y'); 
+    
+    $nomeDiretorio = $nomeMes . '_' . $ano;
+
+    $caminhoDiretorio = $diretorioBase . '/' . $nomeDiretorio;
+
+    // Restaura o locale padrão
+    setlocale(LC_TIME, '');
+
+    // Verifica se o diretório já existe
+    if (!is_dir($caminhoDiretorio)) {
+
+        if (mkdir($caminhoDiretorio, 0777, true)) { 
+            
+            $pdfOriginal = '../../assets/relatorios/Relatorio Modelo.pdf'; 
+            $pdfDestino = $caminhoDiretorio . '/Relatorio_Mensal.pdf'; 
+        
+            if (file_exists($pdfOriginal)) {
+                if (copy($pdfOriginal, $pdfDestino)) {
+                    echo 'Arquivo PDF copiado com sucesso para: ' . $pdfDestino;
+                } else {
+                    echo 'Erro ao copiar o arquivo PDF';
+                }
+            } else {
+                echo 'O arquivo PDF original não foi encontrado';
+            }
+        } else {
+            echo 'Erro ao criar o diretório';
+        }
+        
+    } else {
+        echo 'O diretório já existe: ' . $caminhoDiretorio;
     }
 }
 

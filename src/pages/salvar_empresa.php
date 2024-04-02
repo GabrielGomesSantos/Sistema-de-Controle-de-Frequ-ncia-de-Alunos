@@ -27,6 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (!mysqli_query($conn,$sql_Insert)) {
             die("Error: ".mysqli_error($conn));
         }else{
+            newFolder($nome);
             echo "<script> 
             if (confirm('Empresa inserida com sucesso! <BR> Deseja inserir outra empresa?')) {
                 window.location.href = 'insert_empresa.php';
