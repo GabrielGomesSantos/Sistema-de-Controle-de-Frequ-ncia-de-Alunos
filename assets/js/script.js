@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 window.onload = function(){$("#showPassword").hide();}
 
 $("#txtPassword").on('change',function() {  
@@ -23,6 +22,3 @@ $(".reveal").on('click',function() {
         $pwd.attr('type', 'password');
     }
 });
-=======
-  
->>>>>>> Stashed changes

@@ -15,7 +15,7 @@
         if (mysqli_query($conn, $sql)) {
             echo "New record created successfully";
             
-            header('Location: insert_empresa.php');
+            header('Location: ../../index.php');
         } else {
             echo "Error: " . $sql . "<br>" . mysqli_error($conn);
         }
