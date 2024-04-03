@@ -21,7 +21,7 @@ form {
     
 }
 header {
-    background-color: rgb(98, 98, 189);
+    background-color: #3C60A7;
     color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.233);
 
@@ -163,4 +163,15 @@ button:active {
     font-weight: bold;
     background-color: rgb(184, 184, 184);
     color:rgb(84, 83, 83);
+}
+
+.container-senha {
+    position: relative;
+}
+  .exibir-senha {
+    position: absolute;
+    right: 15px;
+    top: 70%;
+    transform: translateY(-50%);
+    cursor: pointer;
 }

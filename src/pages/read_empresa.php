@@ -23,12 +23,14 @@
 
 
 
-</head>
+</head> 
 <header>
     <img src="https://www.fiemg.com.br/senai/wp-content/uploads/sites/12/2023/02/Branco_TAG_SENAI_.png" alt="">
     <div class="titulo">
-        <h1>Relatorio de Frequência</h1>
+    <h1>Relatorio de Frequência</h1>
     </div>
+    
+    
 </header>
 <body>
     

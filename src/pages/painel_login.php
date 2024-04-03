@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets\css\style_login.css">
   <?php include ('links_css.php') ?>
+
+  <script src="..\..\assets\js\botao_mostrar_senha.js"></script>
+  
   <title>Document</title>
 </head>
 
@@ -28,8 +31,11 @@
           <label for="usuario">Usuário</label>
           <input class="inputtext" name="usuario" type="text" required>
 
-          <label for="senha">Senha</label>
-          <input class="inputtext" name="senha" type="text" required>
+          <div class="container-senha">
+                <label for="senha">Senha</label>
+                <input class="inputtext" type="password" id="password" name="senha" required >
+                <span class="exibir-senha" onclick="togglePassword()">Mostrar</span>
+          </div>
 
 
           <div class="buttonsubmit">
