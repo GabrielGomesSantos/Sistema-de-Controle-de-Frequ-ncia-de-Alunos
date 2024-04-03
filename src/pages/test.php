@@ -1,4 +1,4 @@
 <?php
-    include("conexao.php");
-    criarDiretorioMensalComPDF("peter");
+// Caminho para a pasta específica
+
 ?>
