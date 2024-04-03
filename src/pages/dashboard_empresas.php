@@ -34,10 +34,45 @@
     </div>
 </header>
 <body>
+<<<<<<< Updated upstream
     
     <div class="content">
          <div class="arquivo"><img src="https://img.freepik.com/vetores-premium/icone-de-pasta-de-arquivo-em-estilo-simples-documentos-arquivo-ilustracao-vetorial-no-fundo-branco-isolado-conceito-de-negocios-de-armazenamento_157943-627.jpg" alt=""></div>
-    </div> 
-        
+=======
+    <div clas="content">
+        <div class="titulo2">
+        <h1>ARQUIVOS:</h1>
+</div>
+    <div class="pasta">
+    <header class="header1">
+
+    </header>    
+    <div class="arquivos" >
     
+    <?php
+        
+        $caminhoDaPasta = '../../companies/peter';
+
+        $arquivos = scandir($caminhoDaPasta);
+        $arquivos = array_diff($arquivos, array('..', '.'));
+        $count = 0;
+         foreach ($arquivos as $arquivo) {
+    ?>
+
+        <div class="arquivo" onclick="window.location='<?php echo $caminhoDaPasta . '/' . $arquivo; ?>'">
+            <img src="../../assets/img/pngwing.com.png" alt="">
+
+
+            
+            <div class="nome_arquivo">
+                <p><?php echo $arquivo;?></p>
+            </div
+        </div>
+   
+          
+>>>>>>> Stashed changes
+    </div> 
+    <?php }?> 
+    </div>
+    </div>
 </body>
