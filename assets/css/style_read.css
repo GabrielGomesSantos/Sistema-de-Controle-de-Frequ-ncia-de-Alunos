@@ -19,8 +19,6 @@ header {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.233);
   
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
 }
 
 .titulo{
@@ -38,8 +36,9 @@ header img {
 }
 header h1  {
   display: flex;
-  margin-left: -200px ;
+  margin-left: -102px;
   padding: 0px;
+  
 }
 .content {
     
@@ -103,4 +102,46 @@ tr:nth-child(even) {
 
 tr:nth-child(odd) {
   background-color: #ffffff;
+}
+
+.botao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  
+}
+header button {
+  background-color: #638ad9;
+  color: #ffffff  ;
+  border: transparent;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 7px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.093);
+  padding-left: 10px;
+  padding-right: 10px;
+  border: #638ad9 2px solid;
+}
+
+header button:hover {
+  border: white 2px solid;
+
+}
+header button:active{
+  background-color: #638ad962;
+  border-color: #ffffff;
+}
+.arquivo img {
+  width: 200px;
+  border: 2px rgba(255, 255, 255, 0.041) solid;
+  border-radius: 25px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.159) ;
+}
+.arquivo img:hover {
+  border: 2px rgba(0, 0, 0, 0.48) solid;
+  padding: 2px;
+  transition: 0.1s;
+
+
 }
