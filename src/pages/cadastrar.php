@@ -16,6 +16,7 @@
 </head>
 <header>
     <img src="https://www.fiemg.com.br/senai/wp-content/uploads/sites/12/2023/02/Branco_TAG_SENAI_.png" alt="">
+    
 </header>
 <body>
 
@@ -24,7 +25,7 @@
         
         <div class="formulario">
         <header class="header1"></header>
-        <form action="salvar_cadastro.php" method="post">
+        <form action="painel_login.php" method="post">
 
             <h1>Cadastrar</h1>
 

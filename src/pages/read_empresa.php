@@ -1,5 +1,6 @@
 <?php 
     include("conexao.php"); 
+    include("links_css.php"); 
 
     $busca = isset($_GET['busca']) ? $_GET['busca'] : '';
     $nome_da_table = 'empresa'; 
@@ -19,12 +20,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../assets/css/style_read.css">
     <link rel="stylesheet" href="assets/css/style_read.css">
+
+
+
 </head>
+<header>
+    <img src="https://www.fiemg.com.br/senai/wp-content/uploads/sites/12/2023/02/Branco_TAG_SENAI_.png" alt="">
+    <div class="titulo">
+        <h1>Relatorio de Frequência</h1>
+    </div>
+</header>
 <body>
-
+    
     <div class="content">
+        
+        <div class="table">
+        <h1>Empresas Registradas:</h1>  
         <table>
-
+        
             <thead>
     
                 <?php 
@@ -35,7 +48,7 @@
                     <th>NOME</th>
                     <th>TELEFONE</th>
                     <th>CNPJ</th>
-                    <th><a href='src/pages/send.php'><button class="button_acao">SEND ALL</button></a></th>
+                    <th><a href='src/pages/send.php'><button class="button_acao">ENVIAR TODOS</button></a></th>
                     
                 </tr>
                 
@@ -62,12 +75,13 @@
                     <td onclick = "windows.location"><?php echo $row["nomeEmpresa"]; ?></td>
                     <td><?php echo $row["telefone"]; ?></td>
                     <td><?php echo $row["cnpj"]; ?></td>
-                    <td> <a href='src/pages/send.php?id=<?php echo $row["id"]; ?>'><button class="button_acao">SEND</button></a></td>
+                    <td class='botao-enviar'> <a href='src/pages/send.php?id=<?php echo $row["id"]; ?>'><button class="button_acao">ENVIAR</button></a></td>
                 </tr>
 
                 <?php } ?>
             </tbody>
-        </table>    
+        </table>
+        </div>    
     </div> 
         
     
