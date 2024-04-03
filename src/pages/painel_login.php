@@ -6,6 +6,9 @@
   <link rel="stylesheet" href="..\..\assets\css\style_login.css">
 
   <?php include ('links_css.php') ?>
+
+  <script src="..\..\assets\js\botao_mostrar_senha.js"></script>
+  
   <title>Document</title>
 </head>
 <header>
@@ -24,8 +27,11 @@
           <label for="usuario">Usuário</label>
           <input class="inputtext" type="text">
 
-          <label for="senha">Senha</label>
-          <input class="inputtext" type="text">
+          <div class="container-senha">
+                <label for="senha">Senha</label>
+                <input class="inputtext" type="password" id="password" name="password" required >
+                <span class="exibir-senha" onclick="togglePassword()">Mostrar</span>
+          </div>
 
 
           <div class="buttonsubmit">
