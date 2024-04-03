@@ -30,7 +30,7 @@
         <h1>Relatorio de Frequência</h1>
     </div>
     <div class="botao">
-     <button onclick="window.location=''">Sair</button>
+     <button onclick="window.location='logout.php'">Sair</button>
     </div>
 </header>
 <body>

@@ -36,14 +36,27 @@
                 </div>
 
                 <label for="tipo">Tipo:</label>
-                <select class="inputtext" id="tipo" name="tipo"  required>
-                    <option value="" disabled selected hidden>Selecione uma opção</option>
+                <select class="inputtext" id="tipo" name="tipo" required onchange="mostrarEmpresa(this)">
+                    <option value=" " disabled selected hidden>Selecione uma opção</option>
                     <option value="1">Secretaria - Senai</option>
                     <option value="2">Empresa</option>
                 </select>
-                
+
+                <label for="empresa" id="labelEmpresa" style="display: none;">Empresa:</label>
+                <select class="inputtext" id="empresa" name="empresa" style="display: none;" required>
+                    <option value="" disabled selected hidden>Selecione uma opção</option>
+                    <?php 
+                        $sql = "SELECT nomeEmpresa FROM `empresa`";
+                        $result = mysqli_query($conn, $sql);
+
+                        while ($row = mysqli_fetch_assoc($result)) {
+                            echo "<option value=\"" . $row["nomeEmpresa"] . "\">" . $row["nomeEmpresa"] . "</option>";
+                        }
+                    ?>
+                </select>
+                        
                 <div class="buttonsubmit">
-                    <input class="submit"type="submit" value="Enviar">
+                    <input class="submit" type="submit" value="Enviar">
                 </div>
 
             </form>
@@ -51,7 +64,6 @@
         </div>
 
     </div>
-
     <script src="..\..\assets\js\botao_mostrar_senha.js"></script>
 </body>
 </html>
