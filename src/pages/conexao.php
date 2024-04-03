@@ -53,13 +53,7 @@ function criarDiretorioMensalComPDF($empresa) {
 
     $diretorioBase = "../../companies/{$empresa}";
 
-    // Obtém o nome do mês e o ano atual
-    $nomeMes = strftime('%B'); // %B retorna o nome completo do mês
-    $ano = date('Y'); 
-    
-    $nomeDiretorio = $nomeMes . '_' . $ano;
-
-    $caminhoDiretorio = $diretorioBase . '/' . $nomeDiretorio;
+    $caminhoDiretorio = $diretorioBase . '/';
 
     // Restaura o locale padrão
     setlocale(LC_TIME, '');
@@ -68,9 +62,23 @@ function criarDiretorioMensalComPDF($empresa) {
     if (!is_dir($caminhoDiretorio)) {
 
         if (mkdir($caminhoDiretorio, 0777, true)) { 
+
+            // Define o locale para português do Brasil
+            setlocale(LC_TIME, 'pt_BR.utf8');
+
+            $diretorioBase = "../../companies/{$empresa}";
+
+            // Obtém o nome do mês e o ano atual
+            $nomeMes = strftime('%B'); // %B retorna o nome completo do mês
+            $ano = date('Y'); 
+            
+            $nomeRelatorio = $ano . '_' . $nomeMes.'.pdf';
+
+            // Restaura o locale padrão
+            setlocale(LC_TIME, '');
             
             $pdfOriginal = '../../assets/relatorios/Relatorio Modelo.pdf'; 
-            $pdfDestino = $caminhoDiretorio . '/Relatorio_Mensal.pdf'; 
+            $pdfDestino = $caminhoDiretorio . $nomeRelatorio; 
         
             if (file_exists($pdfOriginal)) {
                 if (copy($pdfOriginal, $pdfDestino)) {
@@ -86,7 +94,34 @@ function criarDiretorioMensalComPDF($empresa) {
         }
         
     } else {
-        echo 'O diretório já existe: ' . $caminhoDiretorio;
+
+        echo"Diretorio ja existente <br>";
+
+        setlocale(LC_TIME, 'pt_BR.utf8');
+
+        $diretorioBase = "../../companies/{$empresa}";
+
+        $nomeMes = strftime('%B'); // %B retorna o nome completo do mês
+        $ano = date('Y'); 
+        
+        $nomeRelatorio = $ano . '_' . $nomeMes.'.pdf';
+
+        // Restaura o locale padrão
+        setlocale(LC_TIME, '');
+        
+        $pdfOriginal = '../../assets/relatorios/Relatorio Modelo.pdf'; 
+        $pdfDestino = $caminhoDiretorio . $nomeRelatorio; 
+    
+        if (file_exists($pdfOriginal)) {
+            if (copy($pdfOriginal, $pdfDestino)) {
+                echo 'Arquivo PDF copiado com sucesso para: ' . $pdfDestino;
+            } else {
+                echo 'Erro ao copiar o arquivo PDF';
+            }
+        } else {
+            echo 'O arquivo PDF original não foi encontrado';
+        }
+
     }
 }
 
