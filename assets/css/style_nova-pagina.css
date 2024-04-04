@@ -4,40 +4,29 @@
   font-weight: 400;
   font-style: normal;
 }
-.titulo h1{
-    font-family: "Nunito", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
 body {
     display: flex;
     flex-direction: column;
     margin: 0px;
     height: 100vh;
 }
-
 form {
     padding: 30px ;
     padding-top: 20px;
- 
     display: flex;
     flex-direction: column;
-    
 }
 header {
     background-color: #3C60A7;
     color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.233);
-
 }
-.header1{
+.header-1{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     padding: 6px;
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.233);
     height: 15px;
-
 }
 header img {
     width: 200px;
@@ -45,24 +34,18 @@ header img {
 label, input, h1, select {
     margin: 5px;
 }
-label, .inputtext {
+label, .input-text {
     font-size: 20px;
 }
 label {
     margin-top: 15px;
 }
-
-
 h1{
-   
     padding-bottom: 20px;
     border-bottom: 2px rgba(128, 128, 128, 0.418) solid;
     font-size: 40px;
-    
 }
-
 .content {
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,40 +53,22 @@ h1{
     flex-direction: column;
 }
 .formulario{
-    
-     
     display: flex;
     flex-direction: column;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.233);
     border-radius: 10px;
-    
-   
-    
-
 }
-
 input {
     display: flex;
     border-radius: 9px;
     border: 2px rgba(128, 128, 128, 0.418) solid;
-   
     height: 30px;
     width: 300pt;
-    
-}
-.buttonsubmit {
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .submit {
     display: block;
-    
-    margin: 20px;
-
+    margin-top: 20px;
     width:100px;
-
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.092) ;
 }
 
@@ -120,15 +85,10 @@ input {
     color:rgb(84, 83, 83);
 }
 
-.confirmarident{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 0px;
-    font-size: 35px;
-}
-h3 {
-    font-size: 14px;
+.input-file {
+    display: block;
+    border-radius: 0px;
+    border: 0px rgba(128, 128, 128, 0.418) solid;
 }
 select {
     display: flex;
@@ -137,14 +97,3 @@ select {
     
     height: 36px;
 }
-
-.container-senha {
-    position: relative;
-  }
-  .exibir-senha {
-    position: absolute;
-    right: 15px;
-    top: 70%;
-    transform: translateY(-50%);
-    cursor: pointer;
-  }
