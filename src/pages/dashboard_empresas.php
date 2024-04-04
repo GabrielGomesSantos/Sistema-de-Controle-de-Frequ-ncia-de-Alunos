@@ -1,17 +1,6 @@
 <?php 
     include("conexao.php"); 
     include("links_css.php"); 
-
-    $busca = isset($_GET['busca']) ? $_GET['busca'] : '';
-    $nome_da_table = 'empresa'; 
-    
-    if (!empty($busca)) { 
-        $sql = "SELECT * FROM $nome_da_table WHERE nome LIKE '%$busca%'";
-    } else {
-        $sql = "SELECT * FROM $nome_da_table";
-    }
-
-    $result = mysqli_query($conn, $sql); // Executa a consulta SQL
 ?>
 
 

@@ -46,7 +46,7 @@ function newFolder($nome){
     }
 }
 
-function criarDiretorioMensalComPDF($empresa) {
+function criarRelatorio($empresa) {
 
     // Define o locale para português do Brasil
     setlocale(LC_TIME, 'pt_BR.utf8');
@@ -76,12 +76,11 @@ function criarDiretorioMensalComPDF($empresa) {
 
             // Restaura o locale padrão
             setlocale(LC_TIME, '');
-            
-            $pdfOriginal = '../../assets/relatorios/Relatorio Modelo.pdf'; 
+             
             $pdfDestino = $caminhoDiretorio . $nomeRelatorio; 
         
-            if (file_exists($pdfOriginal)) {
-                if (copy($pdfOriginal, $pdfDestino)) {
+            if (file_exists($arquivo)) {
+                if (copy($arquivo, $pdfDestino)) {
                     echo 'Arquivo PDF copiado com sucesso para: ' . $pdfDestino;
                 } else {
                     echo 'Erro ao copiar o arquivo PDF';
@@ -109,11 +108,11 @@ function criarDiretorioMensalComPDF($empresa) {
         // Restaura o locale padrão
         setlocale(LC_TIME, '');
         
-        $pdfOriginal = '../../assets/relatorios/Relatorio Modelo.pdf'; 
+        $arquivo = '../../assets/relatorios/Relatorio Modelo.pdf'; 
         $pdfDestino = $caminhoDiretorio . $nomeRelatorio; 
     
-        if (file_exists($pdfOriginal)) {
-            if (copy($pdfOriginal, $pdfDestino)) {
+        if (file_exists($arquivo)) {
+            if (copy($arquivo, $pdfDestino)) {
                 echo 'Arquivo PDF copiado com sucesso para: ' . $pdfDestino;
             } else {
                 echo 'Erro ao copiar o arquivo PDF';
