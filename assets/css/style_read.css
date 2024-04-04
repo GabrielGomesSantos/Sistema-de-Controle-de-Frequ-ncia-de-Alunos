@@ -1,147 +1,185 @@
 *{
-    font-family: "Nunito", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+  font-family: "Nunito", sans-serif;
+font-optical-sizing: auto;
+font-weight: 400;
+font-style: normal;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    margin: 0px;
-    padding: 0%;
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0%;
+  height: 100vh;
 }
 
 header {
-  background-color: #3C60A7;
-  color: white;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.233);
-  
-  display: flex;
+background-color: #3C60A7;
+color: white;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.233);
+
+display: flex;
 }
 
 .titulo{
-  
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
+
+display: flex;
+width: 100%;
+align-items: center;
+justify-content: center;
 
 }
 
 
 header img {
-  width: 200px;
+width: 200px;
 }
 header h1  {
-  display: flex;
-  margin-left: -102px;
-  padding: 0px;
-  
+display: flex;
+margin-left: -102px;
+padding: 0px;
+
 }
 .content {
-    
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 3%;
-  flex-direction: column;
+  
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 3%;
+flex-direction: column;
 }
 
 table, th, td, tr {
-  border: 2px #3C60A7 solid;
-  border-collapse: collapse;
-  padding: 3px;
+border: 2px #3C60A7 solid;
+border-collapse: collapse;
+padding: 3px;
 }
 
 th{
-  background-color: #3C60A7;
-  color: white;
+background-color: #3C60A7;
+color: white;
 }
 
 .table  {
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.156);
-  text-align: center;
+padding: 20px;
+border-radius: 15px;
+box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.156);
+text-align: center;
 }
 
 .content h1{
 
-  margin-top: 10px;
-  padding: 4px;
-  border-bottom: 3px rgba(0, 0, 0, 0.267) solid ;
+margin-top: 10px;
+padding: 4px;
+border-bottom: 3px rgba(0, 0, 0, 0.267) solid ;
 
 }
 
 .botao-enviar{
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: transparent;
+display: flex;
+justify-content: center;
+align-items: center;
+border: transparent;
 
 }
 button {
-  background-color: #3C60A7;
+background-color: #3C60A7;
 }
 td button {
-  background-color: whitesmoke;
-  border: 1px black solid;
-  border-radius: 5px;
+background-color: whitesmoke;
+border: 1px black solid;
+border-radius: 5px;
 }
 th button {
-  text-decoration: underline;
-  color: white;
-  border-width: 0px;
+text-decoration: underline;
+color: white;
+border-width: 0px;
 }
 tr:nth-child(even) {
-  background-color: rgba(0, 128, 255, 0.047);
+background-color: rgba(0, 128, 255, 0.047);
 }
 
 tr:nth-child(odd) {
-  background-color: #ffffff;
+background-color: #ffffff;
 }
 
 .botao {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 20px;
-  
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 20px;
+
 }
 header button {
-  background-color: #638ad9;
-  color: #ffffff  ;
-  border: transparent;
-  padding: 8px;
-  font-size: 16px;
-  border-radius: 7px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.093);
-  padding-left: 10px;
-  padding-right: 10px;
-  border: #638ad9 2px solid;
+background-color: #638ad9;
+color: #ffffff  ;
+border: transparent;
+padding: 8px;
+font-size: 16px;
+border-radius: 7px;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.093);
+padding-left: 10px;
+padding-right: 10px;
+border: #638ad9 2px solid;
 }
 
 header button:hover {
-  border: white 2px solid;
+border: white 2px solid;
 
 }
 header button:active{
-  background-color: #638ad962;
-  border-color: #ffffff;
+background-color: #638ad962;
+border-color: #ffffff;
 }
 .arquivo img {
-  width: 200px;
-  border: 2px rgba(255, 255, 255, 0.041) solid;
-  border-radius: 25px;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.159) ;
+width: 200px;
+border: 2px rgba(255, 255, 255, 0.041) solid;
+border-radius: 25px;
+box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.159) ;
+
 }
 .arquivo img:hover {
-  border: 2px rgba(0, 0, 0, 0.48) solid;
-  padding: 2px;
-  transition: 0.1s;
+border: 2px rgba(0, 0, 0, 0.48) solid; 
 
 
+}
+.arquivo {
+display: flex;
+flex-direction:column ;
+align-items: center;
+justify-content: center;
+width: 250px;
+}
+
+
+.arquivos {
+display: grid;
+grid-template-columns: repeat(3, 1fr); /* Define 3 itens por linha */
+grid-gap: 5px;
+padding: 20px;
+justify-content: center;
+align-items: center; /* Centraliza horizontalmente */
+
+}
+.pasta {
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 20px;
+box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.298);
+margin: 24%;
+margin-top: 0%;
+
+}
+.titulo2 {
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.titulo2 h1 {
+font-size: 30px;
+font-weight: bolder;
+text-decoration: underline;
 }

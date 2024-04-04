@@ -30,32 +30,42 @@
         <h1>Relatorio de Frequência</h1>
     </div>
     <div class="botao">
-     <button onclick="window.location='logout.php'">Sair</button>
+     <button onclick="window.location=''">Sair</button>
     </div>
 </header>
 <body>
+    <div clas="content">
+        <div class="titulo2">
+        <h1>ARQUIVOS:</h1>
+</div>
+    <div class="pasta">
+    <header class="header1">
+    </header>    
+    <div class="arquivos">
     
-    <div class="content" >
-
     <?php
         
         $caminhoDaPasta = '../../companies/peter';
 
         $arquivos = scandir($caminhoDaPasta);
         $arquivos = array_diff($arquivos, array('..', '.'));
-       
+        $count = 0;
          foreach ($arquivos as $arquivo) {
     ?>
 
         <div class="arquivo" onclick="window.location='<?php echo $caminhoDaPasta . '/' . $arquivo; ?>'">
             <img src="../../assets/img/pngwing.com.png" alt="">
-        </div>
 
-        <div class="nome_arquivo">
-            <p><?php echo $arquivo;}?></p>
-        </div>
+
             
+            <div class="nome_arquivo">
+                <p><?php echo $arquivo;?></p>
+            </div
+        </div>
+   
+          
     </div> 
-        
-    
+    <?php }?> 
+    </div>
+    </div>
 </body>
