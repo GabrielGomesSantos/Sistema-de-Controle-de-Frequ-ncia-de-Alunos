@@ -30,7 +30,10 @@
 
 </header>
 <body>
+<<<<<<< Updated upstream
     
+=======
+>>>>>>> Stashed changes
     <div class="content">
         
         <div class="table">
