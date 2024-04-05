@@ -5,17 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../assets/css/style_menu.css">
     <title>Document</title>
-    <style>
-        /* Adicione o estilo CSS necessário para a animação */
-        #slide-menu {
-
-        }
-
-        #slide-menu:hover {
-            
-        }
-    </style>
 </head>
+
 <body>
 <nav id="slide-menu">
     <div class="top">

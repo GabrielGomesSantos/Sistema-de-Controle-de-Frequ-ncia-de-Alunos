@@ -1,4 +1,7 @@
 <?php
-// Caminho para a pasta específica
+
+    session_start();
+    echo "<pre>";
+    print_r($_SESSION)
 
 ?>
