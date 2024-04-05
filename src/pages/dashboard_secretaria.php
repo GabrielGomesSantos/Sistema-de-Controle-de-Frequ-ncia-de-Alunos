@@ -20,17 +20,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../assets/css/style_read.css">
     <link rel="stylesheet" href="assets/css/style_read.css">
-
+    <script src="..\..\assets\js\botao_adicionar.js"></script>
 
 
 </head>
 <header>
-
+    <button class="adicionar-empresa" id="botao_adicionar" onclick="botao_adicionar()">Adicionar Empresa</button>
     <?php  include('navbar.php'); ?>
-
+    <h1>dasdv nsfg</h1>
 </header>
 <body>
-    
+    <h1>adasdas</h1>
     <div class="content">
         
         <div class="table">

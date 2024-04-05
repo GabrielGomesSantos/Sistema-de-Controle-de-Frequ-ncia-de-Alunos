@@ -22,3 +22,6 @@ $(".reveal").on('click',function() {
         $pwd.attr('type', 'password');
     }
 });
+
+
+
