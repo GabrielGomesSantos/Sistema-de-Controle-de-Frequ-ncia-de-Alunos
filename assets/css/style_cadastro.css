@@ -13,14 +13,13 @@ body {
 }
 
 form {
-    padding: 30px ;
-    padding-top: 20px;
+    padding: 40px ;
     display: flex;
     flex-direction: column;
     
 }
 header {
-    background-color: #3C60A7;
+    background-color: rgb(98, 98, 189);
     color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.233);
 
@@ -36,23 +35,18 @@ header {
 header img {
     width: 200px;
 }
-label, input, h1, select {
+label, input, h1 {
     margin: 5px;
 }
 label, .inputtext {
     font-size: 20px;
 }
-label {
-    margin-top: 15px;
-}
 
 
 h1{
-   
-    padding-bottom: 20px;
+    margin-bottom: 20px;
     border-bottom: 2px rgba(128, 128, 128, 0.418) solid;
     font-size: 40px;
-    
 }
 
 .content {
@@ -70,7 +64,6 @@ h1{
     flex-direction: column;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.233);
     border-radius: 10px;
-    
    
     
 
@@ -82,36 +75,19 @@ input {
     border: 2px rgba(128, 128, 128, 0.418) solid;
    
     height: 30px;
-    width: 300pt;
-    
 }
 .buttonsubmit {
     
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: end;
+    justify-content: end;
 }
 .submit {
     display: block;
     
     margin: 20px;
-
+    margin-right: 5px ;
     width:100px;
-
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.092) ;
-}
-
-.buttonsubmit input:hover {
-    border-color: rgb(137, 136, 136);
-    font-weight: bold;
-    color:rgb(137, 136, 136);
-   
-}
-.buttonsubmit input:active {
-    border-color: rgb(84, 84, 84);
-    font-weight: bold;
-    background-color: rgb(184, 184, 184);
-    color:rgb(84, 83, 83);
 }
 
 .confirmarident{
@@ -128,17 +104,6 @@ select {
     display: flex;
     border-radius: 9px;
     border: 2px rgba(128, 128, 128, 0.418) solid;
-    
-    height: 36px;
+   
+    height: 30px;
 }
-
-.container-senha {
-    position: relative;
-  }
-  .exibir-senha {
-    position: absolute;
-    right: 15px;
-    top: 70%;
-    transform: translateY(-50%);
-    cursor: pointer;
-  }

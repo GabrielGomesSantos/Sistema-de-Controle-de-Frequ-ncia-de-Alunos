@@ -139,11 +139,13 @@ border-radius: 25px;
 box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.159) ;
 
 }
+
 .arquivo img:hover {
+  
 border: 2px rgba(0, 0, 0, 0.48) solid; 
 
-
 }
+
 .arquivo {
 display: flex;
 flex-direction:column ;
