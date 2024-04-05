@@ -1,8 +1,8 @@
 <?php 
     include ('conexao.php');
 
-    
-
+    session_start();
+    if(!$_SESSION['logged'] and $_SESSION['type'] == 1){
 ?>
 
 <!DOCTYPE html>
@@ -72,3 +72,15 @@
     <script src="..\..\assets\js\botao_mostrar_senha.js"></script>
 </body>
 </html>
+<?php 
+    }else{
+        echo "<script> 
+        if (confirm('Sem permisão para acessar essa pagina!')) {
+            window.location.href = '../../index.php';
+        } else {
+            window.location.href = '../../index.php';
+        }
+        </script>";
+    }
+
+?>

@@ -27,15 +27,10 @@
 <header>
     <button class="adicionar-empresa" id="botao_adicionar" onclick="botao_adicionar()">Adicionar Empresa</button>
     <?php  include('navbar.php'); ?>
-<<<<<<< Updated upstream
-    <h1>dasdv nsfg</h1>
-=======
     <button class="adicionar-empresa" id="botao_adicionar" >Adicionar Empresa</button>
 
->>>>>>> Stashed changes
 </header>
 <body>
-    <h1>adasdas</h1>
     <div class="content">
         
         <div class="table">

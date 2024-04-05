@@ -22,6 +22,7 @@
         if ($username === $username_correto && $password === $password_correto) {
             $_SESSION['logged'] = true;
             $_SESSION['type'] = $resultado[0]['tipo'];
+            $_SESSION['id'] = $resultado[0]['id'];
             header('Location: dashboard.php');
             exit();
 

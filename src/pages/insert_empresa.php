@@ -1,4 +1,10 @@
-<?php include ('conexao.php') ?>
+<?php 
+    include ('conexao.php');
+
+    session_start();
+    if(!$_SESSION['logged'] and $_SESSION['type'] == 1){
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -40,3 +46,16 @@
     </div>
 </body>
 </html>
+
+<?php 
+    }else{
+        echo "<script> 
+        if (confirm('Sem permisão para acessar essa pagina!')) {
+            window.location.href = '../../index.php';
+        } else {
+            window.location.href = '../../index.php';
+        }
+        </script>";
+    }
+
+?>

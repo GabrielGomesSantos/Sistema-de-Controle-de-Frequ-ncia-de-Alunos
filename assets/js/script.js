@@ -22,11 +22,6 @@ $(".reveal").on('click',function() {
         $pwd.attr('type', 'password');
     }
 });
-<<<<<<< Updated upstream
-
-
-
-=======
 function botao_adicionar() {
     var botao = document.getElementById("botao_adicionar");
     botao.addEventListener("mouseover", function() {
@@ -37,4 +32,3 @@ function botao_adicionar() {
     });
 }
 botao_adicionar();
->>>>>>> Stashed changes
