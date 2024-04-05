@@ -35,21 +35,7 @@
     </div>
 </header>
 <body>
-    <div clas="content">
-        <div class="titulo2">
-        <h1>ARQUIVOS:</h1>
-</div>
-    <div class="pasta">
-    <header class="header1">
-
-    </header>    
-    <div class="arquivos" >
-    
-    <?php
-        
-        $caminhoDaPasta = '../../companies/peter';
-    ?>
-    <div class="box">
+<div class="box">
         <div class="barra-lateral">teste</div>
             <div clas="content">
                 <div class="titulo2">
@@ -71,23 +57,18 @@
                             <div class="arquivo" onclick="window.location='<?php echo $caminhoDaPasta . '/' . $arquivo; ?>'">
                                 <img src="../../assets/img/pngwing.com.png" alt="">
           
-
-    </div> 
-    <?php }?> 
-    </div>
-
                                 <div class="nome_arquivo">
                                     <p><?php echo $arquivo;?></p>
                                 </div>
                             </div>
+                        
+                            <?php }?> 
                         </div> 
                         
                     </div>
                 </div>
             </div>
         
-
     </div>
     <?php include("footer.php");?>
-
 </body>
