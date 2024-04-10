@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 28-Mar-2024 às 20:02
+-- Tempo de geração: 10-Abr-2024 às 19:47
 -- Versão do servidor: 10.4.27-MariaDB
 -- versão do PHP: 8.0.25
 
@@ -34,6 +34,14 @@ CREATE TABLE `empresa` (
   `telefone` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
+--
+-- Extraindo dados da tabela `empresa`
+--
+
+INSERT INTO `empresa` (`id`, `nomeEmpresa`, `cnpj`, `telefone`) VALUES
+(5, 'Empresa A', '123', '111-111'),
+(9, 'Empresa B', '32321', '3123123');
+
 -- --------------------------------------------------------
 
 --
@@ -42,10 +50,21 @@ CREATE TABLE `empresa` (
 
 CREATE TABLE `login` (
   `id` int(11) NOT NULL,
-  `usuario` int(11) NOT NULL,
-  `senha` int(11) NOT NULL,
-  `tipo` int(11) NOT NULL
+  `usuario` varchar(255) NOT NULL,
+  `senha` varchar(255) NOT NULL,
+  `tipo` int(11) NOT NULL,
+  `id_empresa` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+--
+-- Extraindo dados da tabela `login`
+--
+
+INSERT INTO `login` (`id`, `usuario`, `senha`, `tipo`, `id_empresa`) VALUES
+(1, 'peter', '123', 1, NULL),
+(2, 'gomes', '123', 2, 5),
+(4, 'yan', '123', 2, 5),
+(5, 'josi', '123', 2, 9);
 
 --
 -- Índices para tabelas despejadas
@@ -61,7 +80,8 @@ ALTER TABLE `empresa`
 -- Índices para tabela `login`
 --
 ALTER TABLE `login`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `id_empresa` (`id_empresa`);
 
 --
 -- AUTO_INCREMENT de tabelas despejadas
@@ -71,13 +91,23 @@ ALTER TABLE `login`
 -- AUTO_INCREMENT de tabela `empresa`
 --
 ALTER TABLE `empresa`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT de tabela `login`
 --
 ALTER TABLE `login`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- Restrições para despejos de tabelas
+--
+
+--
+-- Limitadores para a tabela `login`
+--
+ALTER TABLE `login`
+  ADD CONSTRAINT `login_ibfk_1` FOREIGN KEY (`id_empresa`) REFERENCES `empresa` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
