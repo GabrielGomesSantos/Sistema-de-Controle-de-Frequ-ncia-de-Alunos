@@ -19,8 +19,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../assets/css/style_read.css">
+<<<<<<< Updated upstream
     <link rel="stylesheet" href="assets/css/style_read.css">
 
+=======
+    <link rel="stylesheet" href="../../assets/css/style_footer.css">
+    <script src="..\..\assets\js\botao_adicionar.js"></script>
+>>>>>>> Stashed changes
 
 
 </head>
@@ -85,6 +90,8 @@
         </table>
         </div>    
     </div> 
-        
-    
+    <?php include('footer.php') ?>
 </body>
+
+        
+
