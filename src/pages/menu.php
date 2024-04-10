@@ -11,11 +11,9 @@
 <nav id="slide-menu">
     <div class="top">
         <ul>
-            <li class="timeline"><button></button></li>
-            <li class="events"><button onclick="window.location.href=('logout.php')">Log Out</button></li>
-            <li class="calendar"><button onclick="window.location.href=('logout.php')">Log Out</button></li>
-            <li class="sep settings"><button onclick="window.location.href=('logout.php')">Log Out</button></li>
-            <li class="logout"><button onclick="window.location.href=('logout.php')">Sair <img src="https://www.svgrepo.com/show/132889/logout.svg" alt=""></button></li>
+            <li class="calendar"><button onclick="window.location.href=('https://www.fiemg.com.br/senai/')">Home<img src="../../assets/img/home.png" alt=""></button></li>
+            <li class="sep settings"><button onclick="window.location.href=('insert_empresa.php')">Add<img src="../../assets/img/plus.png" alt=""></button></li>
+            <li class="logout"><button onclick="window.location.href=('logout.php')">Sair<img src="../../assets/img/leave.png" alt=""></button></li>
         </ul>
     </div>
 </nav>
@@ -32,7 +30,7 @@
 
         // Adicionando um ouvinte de evento para retornar ao estado original quando o mouse sair da nav
         slideMenu.addEventListener('mouseout', function () {
-            slideMenu.style.left = '-75px'; // Retornar à posição inicial
+            slideMenu.style.left = '-110px'; // Retornar à posição inicial
         });
     });
 </script>

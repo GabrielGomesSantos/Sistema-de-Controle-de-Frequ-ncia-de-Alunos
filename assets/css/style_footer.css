@@ -6,7 +6,6 @@
     --color-neutral-40: #f5f5f5;
 }
 
-
 .nav-bar {
     display: flex;
     justify-content: space-between;
@@ -189,7 +188,7 @@ footer {
 }
 
 .footer-link.footer-link:hover {
-    color: #7f37c9
+    color: #3C60A7;
 }
 
 #footer_subscribe{
