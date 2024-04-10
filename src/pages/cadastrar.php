@@ -2,7 +2,7 @@
     include ('conexao.php');
 
     session_start();
-    if(!$_SESSION['logged'] and $_SESSION['type'] == 1){
+    if($_SESSION['logged'] and $_SESSION['type'] == 1){
 ?>
 
 <!DOCTYPE html>
@@ -51,11 +51,14 @@
                 <select class="inputtext" id="empresa" name="empresa" style="display: none;" required>
                     <option value="" disabled selected hidden>Selecione uma opção</option>
                     <?php 
-                        $sql = "SELECT nomeEmpresa FROM `empresa`";
+                        $sql = "SELECT * FROM `empresa`";
                         $result = mysqli_query($conn, $sql);
 
                         while ($row = mysqli_fetch_assoc($result)) {
-                            echo "<option value=\"" . $row["nomeEmpresa"] . "\">" . $row["nomeEmpresa"] . "</option>";
+
+                         
+                            print_r($row);
+                            echo "<option value=\"" . $row["id"] . "\">" . $row["nomeEmpresa"] . "</option>";
                         }
                     ?>
                 </select>

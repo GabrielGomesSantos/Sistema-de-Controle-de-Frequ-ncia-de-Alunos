@@ -34,7 +34,7 @@ function leitura(){
 
 function newFolder($nome){
     
-    $diretorio = '../../companies/'; 
+    $diretorio = '../../companies'; 
     $nomeDiretorio = $nome;
 
     if (!is_dir($diretorio . '/' . $nomeDiretorio)) {

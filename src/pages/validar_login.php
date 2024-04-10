@@ -23,6 +23,7 @@
             $_SESSION['logged'] = true;
             $_SESSION['type'] = $resultado[0]['tipo'];
             $_SESSION['id'] = $resultado[0]['id'];
+            $_SESSION['id_empresa'] = $resultado[0]['id_empresa'];
             header('Location: dashboard.php');
             exit();
 

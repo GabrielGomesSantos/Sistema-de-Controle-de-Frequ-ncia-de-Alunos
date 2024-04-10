@@ -9,11 +9,9 @@
     
     $nome_da_table = 'empresa'; 
 
-    $sql = "SELECT * FROM $nome_da_table WHERE id ={$_SESSION['id']}";
+    $sql = "SELECT * FROM $nome_da_table WHERE id ={$_SESSION['id_empresa']}";
     $result = mysqli_query($conn, $sql);
     $row = mysqli_fetch_assoc($result);
-
-    print_r($row);
 
 ?>
 
@@ -50,10 +48,9 @@
                          
                         <div class="arquivos">
                             <?php     
-                                $caminhoDaPasta = "../../companies/{$row['nomeEmpresa']}";
+                                $caminhoDaPasta = "../../companies/" . $row['nomeEmpresa'] . "/";
                                 $arquivos = scandir($caminhoDaPasta);
                                 $arquivos = array_diff($arquivos, array('..', '.'));
-                                $count = 0;
                                 foreach ($arquivos as $arquivo) {
                             ?>
 

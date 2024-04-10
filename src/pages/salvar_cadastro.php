@@ -2,13 +2,17 @@
 
     include('conexao.php');
 
+    print_r($_POST);
+
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
         $user = $_POST["user"];
         $pass = $_POST["password"];
         $type = $_POST["tipo"];
+        $id_empresa = $_POST["empresa"];
 
-        $sql = "INSERT INTO `login`(`usuario`, `senha`, `tipo`) VALUES ('$user','$pass','$type')";
+
+        $sql = "INSERT INTO `login`(`usuario`, `senha`, `tipo`, `id_empresa`) VALUES ('$user','$pass','$type','$id_empresa')";
 
     }
 
@@ -26,11 +30,3 @@
 
 ?>
 
-
-
-
-
-
-
-
-if (mysqli_num_rows($result) > 0) { 

@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             if (confirm('Empresa inserida com sucesso! <BR> Deseja inserir outra empresa?')) {
                 window.location.href = 'insert_empresa.php';
             } else {
-                window.location.href = 'read_empresa.php';
+                window.location.href = 'dashboard.php';
             }
             </script>";
         }
