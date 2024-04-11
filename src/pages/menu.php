@@ -12,7 +12,8 @@
     <div class="top">
         <ul>
             <li class="calendar"><button onclick="window.location.href=('https://www.fiemg.com.br/senai/')">Home<img src="../../assets/img/home.png" alt=""></button></li>
-            <li class="sep settings"><button onclick="window.location.href=('insert_empresa.php')">Add<img src="../../assets/img/plus.png" alt=""></button></li>
+            <li class="sep settings"><button onclick="window.location.href=('insert_empresa.php')">Empresa<img src="../../assets/img/plus.png" alt=""></button></li>
+            <li class="sep settings"><button onclick="window.location.href=('insert_empresa.php')">Usuarios<img src="../../assets/img/plus.png" alt=""></button></li>
             <li class="logout"><button onclick="window.location.href=('logout.php')">Sair<img src="../../assets/img/leave.png" alt=""></button></li>
         </ul>
     </div>

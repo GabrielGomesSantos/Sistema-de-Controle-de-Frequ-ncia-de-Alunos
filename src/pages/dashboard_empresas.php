@@ -20,17 +20,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../assets/css/style_read.css">
-    <link rel="stylesheet" href="assets/css/style_read.css">
-
-
-
+    <link rel="stylesheet" href="../../assets/css/style_reads.css">
+    <link rel="stylesheet" href="../../assets/css/style_footer.css">
+ 
 </head>
 <header>
     
     <img src="https://www.fiemg.com.br/senai/wp-content/uploads/sites/12/2023/02/Branco_TAG_SENAI_.png" alt="">
-    <div class="titulo">
-        <h1>Relatorio de Frequência <?php echo($row['nomeEmpresa']);?></h1>
-    </div>
+ 
     <div class="botao">
      <button onclick="window.location=''">Sair</button>
     </div>
