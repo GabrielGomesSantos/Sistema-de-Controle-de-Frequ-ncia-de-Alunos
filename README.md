@@ -1,7 +1,7 @@
 <h1 align="center">Sistema de Monitoramento de Frequência</h1>
 
 <p align="center">
-  <img src="https://example.com/logo.png" alt="Logo" width="200" height="200">
+  <img src="https://www.fiemg.com.br/senai/wp-content/uploads/sites/12/2023/02/Branco_TAG_SENAI_.png" alt="Logo" width="200" height="200">
 </p>
 
 <p align="center">
