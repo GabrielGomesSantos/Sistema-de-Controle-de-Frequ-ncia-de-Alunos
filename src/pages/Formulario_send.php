@@ -28,7 +28,7 @@
         <form action="send.php" method="post" enctype="multipart/form-data">
         <h1><?php echo $row['nomeEmpresa']; ?></h1>
 
-            <input type="hidden" name="id" value="<?php echo $id;?>" >
+            <input type="hidden" name="id" value="<?php echo $id?>" >
 
             <label for="arquivo">Escolha o Arquivo:</label>
             <input type="file" class="input-file" required name="fileInput" id="fileInput">

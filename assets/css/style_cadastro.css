@@ -4,12 +4,7 @@
   font-weight: 400;
   font-style: normal;
 }
-.titulo h1{
-    font-family: "Nunito", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
+
 body {
     display: flex;
     flex-direction: column;
@@ -24,7 +19,7 @@ form {
     
 }
 header {
-    background-color: rgb(98, 98, 189);
+    background-color: #3C60A7;
     color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.233);
 

@@ -73,7 +73,7 @@
                     <td onclick = "windows.location"><?php echo $row["nomeEmpresa"]; ?></td>
                     <td><?php echo $row["telefone"]; ?></td>
                     <td><?php echo $row["cnpj"]; ?></td>
-                    <td class='botao-enviar'> <a href='send.php?id=<?php echo $row["id"]; ?>'><button class="button_acao">ENVIAR</button></a></td>
+                    <td class='botao-enviar'> <a href='Formulario_send.php?id=<?php echo $row["id"]; ?>'><button class="button_acao">ENVIAR</button></a></td>
                 </tr>
 
                 <?php } ?>
