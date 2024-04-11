@@ -19,6 +19,9 @@
     
     <title>Document</title>
 </head>
+<header>
+    <img src="https://www.fiemg.com.br/senai/wp-content/uploads/sites/12/2023/02/Branco_TAG_SENAI_.png" alt="">
+</header>
 <body>
     <div class="content">
         
@@ -28,7 +31,7 @@
         <form action="send.php" method="post" enctype="multipart/form-data">
         <h1><?php echo $row['nomeEmpresa']; ?></h1>
 
-            <input type="hidden" name="id" value="<?php echo $id?>" >
+            <input type="hidden" name="id" value="<?php echo $id;?>" >
 
             <label for="arquivo">Escolha o Arquivo:</label>
             <input type="file" class="input-file" required name="fileInput" id="fileInput">
@@ -37,5 +40,6 @@
         </form>
         </div>
     </div>
+    <?php include("footer.php");?>
 </body>
 </html>
