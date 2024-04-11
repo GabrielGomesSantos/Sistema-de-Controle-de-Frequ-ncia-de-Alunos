@@ -29,7 +29,7 @@
     <img src="https://www.fiemg.com.br/senai/wp-content/uploads/sites/12/2023/02/Branco_TAG_SENAI_.png" alt="">
  
     <div class="botao">
-     <button onclick="window.location=''">Sair</button>
+     <button onclick="window.location='logout.php'">Sair</button>
     </div>
 </header>
 <body>
