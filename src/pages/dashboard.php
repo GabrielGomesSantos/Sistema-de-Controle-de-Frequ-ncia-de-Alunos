@@ -5,6 +5,9 @@ session_start();
 
     if($_SESSION['logged']){
         
+        if($_SESSION['type'] == 0){
+            include("dashboard_admin.php");
+        }
         if($_SESSION['type'] == 1){
             include("dashboard_secretaria.php");
         }elseif($_SESSION['type'] == 2){
