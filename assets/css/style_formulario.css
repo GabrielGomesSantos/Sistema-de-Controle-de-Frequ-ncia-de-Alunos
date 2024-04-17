@@ -70,11 +70,15 @@ h1{
 }
 
 input {
+    
     display: flex;
-    border-radius: 9px;
-    border: 2px rgba(128, 128, 128, 0.418) solid;
-   
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 0px;
+    margin-top: 20px;
     height: 30px;
+    width: 300px;
 }
 .buttonsubmit {
     
@@ -108,8 +112,76 @@ select {
     height: 30px;
 }
 
+p{
+    margin: 0px;
+    padding: 5px;
+}
 
 .descricao {
     
     max-width: 500px;
+    border-bottom: 2px #3C60A7 solid;
+    padding-bottom: 30px;
+}
+
+.campo-do-form {
+    margin: 0px;
+    padding: 0px;
+  
+    border-bottom: 2px #3C60A7 solid;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.campo-do-form label {
+    margin: 0px;
+    padding: 0px;
+   
+}
+.campo-do-form p {
+    font-size: 12px;
+    margin: 0px;
+    margin-left: 5px;
+    padding: 0px;
+}
+.campo-do-form-radio {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+}
+.campo-do-form-radio input {
+    width: 20px;
+    height: 20px;
+    margin: 0px;
+    margin-right: 10px;
+    margin-top: 4px;
+}
+.campo-do-form-radio label{
+    text-align: center;
+    
+}
+
+
+.input-file {
+    display: block;
+    border-radius: 0px;
+    border: 0px rgba(128, 128, 128, 0.418) solid;
+}
+
+.inputtext {
+    padding: 5px;
+    height: 50px;
+    font-size: 15px;
+    margin-top: 20px;
+}
+.observacao {
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 0px;
+    width: 500px;
+    border-bottom-color: rgba(128, 128, 128, 0.418);
+}
+.buttonsubmit {
+    border: 0px;
 }
