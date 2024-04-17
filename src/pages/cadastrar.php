@@ -66,4 +66,19 @@
     </div>
     <script src="..\..\assets\js\botao_mostrar_senha.js"></script>
 </body>
+<<<<<<< Updated upstream
 </html>
+=======
+</html>
+<?php 
+    }else{
+        echo "<script> 
+        if (confirm('Sem permisão para acessar essa pagina!')) {
+            window.location.href = '../../index.php';
+        } else {
+            window.location.href = '../../index.php';
+        }
+        </script>";
+    }
+?>
+>>>>>>> Stashed changes
