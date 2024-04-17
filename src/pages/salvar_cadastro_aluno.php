@@ -8,7 +8,7 @@
         $email = $_POST["email"];
         $nome = $_POST["nome"];
         $pass = $_POST["pass_aluno"];
-        $cpf = $_POST["cpf"];
+        $cpf = $_POST["CPF"];
         $telefone = $_POST["telefone"];   
 
         $sql = "SELECT * FROM `alunos` WHERE cpf = {$cpf}";
@@ -18,7 +18,7 @@
         if(mysqli_num_rows($result) > 0){
             echo "<script> 
             if (confirm('CPf já cadastrado! Deseja Logar??')) {
-                window.location.href = '#####';
+                window.location.href = '../../';
             } else {
                 window.location.href = '#####';
             }
