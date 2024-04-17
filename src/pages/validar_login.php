@@ -7,7 +7,7 @@
         $username = $_POST['usuario'];
         $password = $_POST['senha'];
 
-        $sql = "SELECT * FROM `login` WHERE usuario = '{$username}';";
+        $sql = "SELECT * FROM `usuarios` WHERE usuario = '{$username}';";
         $result = mysqli_query($conn, $sql);
 
         if (mysqli_num_rows($result) > 0) {

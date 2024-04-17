@@ -1,6 +1,8 @@
 <?php
-    session_start();
-    
+
+session_start();
+
+
     if($_SESSION['logged']){
         
         if($_SESSION['type'] == 1){

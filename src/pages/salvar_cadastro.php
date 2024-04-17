@@ -12,7 +12,7 @@
         $id_empresa = $_POST["empresa"];
 
 
-        $sql = "INSERT INTO `login`(`usuario`, `senha`, `tipo`, `id_empresa`) VALUES ('$user','$pass','$type','$id_empresa')";
+        $sql = "INSERT INTO `usuarios`(`usuario`, `senha`, `tipo`, `id_empresa`) VALUES ('$user','$pass','$type','$id_empresa')";
 
     }
 
