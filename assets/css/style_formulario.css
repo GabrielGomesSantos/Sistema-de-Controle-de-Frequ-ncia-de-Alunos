@@ -22,7 +22,17 @@ header {
     background-color: #3C60A7;
     color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.233);
+    display: flex;
 
+}
+.titulo{
+
+    display: flex;
+    width: 35%;
+    align-items: center;
+    
+    justify-content: flex-start;  
+    
 }
 .header1{
     border-top-left-radius: 10px;
@@ -54,7 +64,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 7%;
+    margin-top: 3%;
     flex-direction: column;
 }
 .formulario{
@@ -64,7 +74,8 @@ h1{
     flex-direction: column;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.233);
     border-radius: 10px;
-   
+    margin-bottom: 30px;
+    width: 700px;
     
 
 }
@@ -113,6 +124,7 @@ select {
 }
 
 p{
+    font-size: 19 px;
     margin: 0px;
     padding: 5px;
 }

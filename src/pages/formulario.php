@@ -10,14 +10,18 @@
 <body>
 <header>
     <img src="https://www.fiemg.com.br/senai/wp-content/uploads/sites/12/2023/02/Branco_TAG_SENAI_.png" alt="">
+    
+
+
+    
 </header>
     <div class="content">
         <div class="formulario">
             <header class="header1"></header>
             <form action="" method="post">
 
-                <h1>Envio de justificativa de falta</h1>
-                <p class="descricao">Conforme Manual do Aluno, é direito do aluno valer-se de justificativas de falta, desde que o documento seja apresentado no prazo-limite de até (05) cinco dias consecutivos, contados a partir da 1ª data da falta.</p>
+                
+                <h1 class="descricao">REGISTRAR ALUNO</h1>
                 
                 <div class="campo-do-form">
                     <label for="modalidade">Qual a modalidade do seu curso?</label>
@@ -53,7 +57,7 @@
                         <option value="">Curso3</option>
                     </select>
                 </div>
-                <div class="campo-do-form">
+                <!-- <div class="campo-do-form">
                     <label  class= "justificativa" for="">Sua justificativa refere-se a:</label>
                     <br><br>
                     <div class="campo-do-form-radio">
@@ -91,7 +95,7 @@
                     </label>
                     <input type="text" class="observacao" name="observacao" placeholder="Sua resposta aqui">
                 </div>
-                <div class="buttonsubmit">
+                <div class="buttonsubmit"> -->
                     <input class="submit" type="submit" value="Enviar">
                 </div>
             </form>
