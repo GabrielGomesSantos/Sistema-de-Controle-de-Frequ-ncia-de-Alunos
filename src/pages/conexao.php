@@ -123,5 +123,4 @@ function criarRelatorio($empresa) {
 
     }
 }
-
 ?>
