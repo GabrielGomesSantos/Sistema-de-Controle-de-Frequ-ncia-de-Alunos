@@ -38,6 +38,8 @@
         <div class="footer_copy_senai">
             <p>SENAI JUIZ DE FORA CFP JOSÉ FAGUNDES NETTO</p>
         </div>
+
+    </footer>
         <div class="footer_copy_cnpj">
             <p>03.773.700/0017-74</p>
         </div>

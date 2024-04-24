@@ -24,10 +24,8 @@
 </header>
 <body>
     <div class="content">
-        
         <div class="formulario">
         <header class="header-1"></header>
-            
         <form action="send.php" method="post" enctype="multipart/form-data">
         <h1><?php echo $row['nomeEmpresa']; ?></h1>
 

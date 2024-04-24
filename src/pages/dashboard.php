@@ -25,5 +25,4 @@ session_start();
         }
         </script>";
     }
-
 ?>
