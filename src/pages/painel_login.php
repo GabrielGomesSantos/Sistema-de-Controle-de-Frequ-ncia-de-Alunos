@@ -15,11 +15,17 @@
 <header>
     <img src="https://www.fiemg.com.br/senai/wp-content/uploads/sites/12/2023/02/Branco_TAG_SENAI_.png" alt="">
     
-    <a href="registrar_aluno.php"><button>É aluno e ainda não é cadastrado? Crie sua conta!</button></a>
+    <a href="registrar_aluno.php"><button>Area Do <br> aluno</button></a>
     
 </header>
 
 <body>
+
+    <?php
+        if(isset($_GET['Error'])){
+          print("Arrumar condicao de erro");
+        }
+    ?>
 
     <div class="content">
      
