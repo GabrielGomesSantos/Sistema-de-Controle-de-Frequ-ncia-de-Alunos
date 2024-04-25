@@ -28,14 +28,8 @@
             exit();
 
         } else {
+            header("location: ../../index.php?error=1");
 
-            echo "<script> 
-                if (confirm('Usuario e/ou Senha invalidos!')) {
-                    window.location.href = '../../index.php';
-                } else {
-                    window.location.href = '../../index.php';
-                }
-                </script>";
         }
     } else {
         header('Location: ../../index.php');
