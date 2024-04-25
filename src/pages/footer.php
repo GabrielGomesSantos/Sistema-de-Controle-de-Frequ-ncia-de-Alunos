@@ -12,6 +12,8 @@
                 <a href="https://wa.me/553232392233" class="footer-link" id="whatsapp">
                     <i class="fa-brands fa-whatsapp"></i>
                 </a>
+
+                <a href="https://www.flaticon.com/br/icones-gratis/sala-de-aula" title="sala de aula ícones">ícones criados por Freepik - Flaticon</a>
             </div>
         </div>
     
@@ -39,7 +41,7 @@
             <p>SENAI JUIZ DE FORA CFP JOSÉ FAGUNDES NETTO</p>
         </div>
 
-    </footer>
+  
         <div class="footer_copy_cnpj">
             <p>03.773.700/0017-74</p>
         </div>

@@ -17,9 +17,59 @@ header {
 background-color: #3C60A7;
 color: white;
 box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.233);
-
 display: flex;
+align-items: center;
+justify-content: flex-start;
  
+}
+
+
+.card{
+
+  transition: 0.13s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 200px;
+  height: 250px;
+  border: solid 1px black;
+  border-radius: 7px;
+  margin: 10px;
+  
+
+}
+
+.card:hover{
+
+  transition: 0.2s ease-in-out;
+  background-color: lightgray;
+  padding: 12px;
+
+    .card-title{
+
+      transition: 0.2s ease-in-out;
+      padding-bottom: 5px;
+      font-size: 22px;
+
+    }
+
+
+}
+.card-title{
+
+  padding-bottom: 5px;
+  border-bottom: solid 1px black;
+
+}
+
+.card-img-top{
+
+
+  padding: 8px;
+
+
 }
 
 .titulo{
@@ -38,10 +88,11 @@ width: 200px;
 }
 header h1  {
 display: flex;
-margin-left: -102px;
+margin-left: -100px;
 padding: 0px;
 
 }
+
 .content {
   
 display: flex;
