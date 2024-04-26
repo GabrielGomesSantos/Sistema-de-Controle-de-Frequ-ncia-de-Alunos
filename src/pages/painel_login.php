@@ -14,10 +14,16 @@
 
 <header>
     <img src="https://www.fiemg.com.br/senai/wp-content/uploads/sites/12/2023/02/Branco_TAG_SENAI_.png" alt="">
+<<<<<<< Updated upstream
     <div class="titulo"><h1>Secretaria/Empresa</h1></div>
     <div class="botao">
      <button onclick="window.location='../Sistema-de-Controle-de-Frequencia-de-Alunos/src/pages/cadastrar_aluno.php'">Sou aluno!</button>
     </div>
+=======
+    
+    <a href="cpf_aluno.php"><button>Area Do <br> aluno</button></a>
+    
+>>>>>>> Stashed changes
 </header>
 
 <body>

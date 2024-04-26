@@ -13,6 +13,6 @@
     <div class="botao">
      <button onclick="window.location='logout.php'">Sair</button>
     </div>
-    <?php include('menu.php') ?>
+    
 </body>
 </html>
