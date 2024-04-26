@@ -32,7 +32,7 @@ function leitura(){
     }
 }
 
-function newFolder($nome){
+function newFolder($nome, $tipo){
     
     $diretorio = '../../companies'; 
     $nomeDiretorio = $nome;

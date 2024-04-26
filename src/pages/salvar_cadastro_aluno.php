@@ -11,10 +11,11 @@
         $cpf = $_POST["CPF"];
         $telefone = $_POST["telefone"];   
 
-        $sql = "SELECT * FROM `alunos` WHERE cpf = {$cpf}";
+        $sql = "SELECT 'cpf' FROM `alunos` WHERE cpf = $cpf";
 
         $result = mysqli_query($conn,$sql);
-
+        print_r($result);
+    
         if(mysqli_num_rows($result) > 0){
             echo "<script> 
             if (confirm('CPf já cadastrado! Deseja Logar??')) {
@@ -24,8 +25,11 @@
             }
             </script>";
         
-        }else{
-            $sql_Insert = "INSERT INTO `alunos`(`nome`, `password`, `cpf`, `email`, `telefone`) VALUES ('$nome','$pass','$cpf','$email','$telefone')";
+        };
+            $sql_Insert = "INSERT INTO `alunos`
+            (`nome`, `email`, `cpf`, `telefone`, `senha`) VALUES
+            ('$nome', '$email','$cpf','$telefone', '$pass')";
+            
             if (!mysqli_query($conn,$sql_Insert)) {
                 die("Error: ".mysqli_error($conn));
             }else{
@@ -39,5 +43,3 @@
                 </script>";
             }
         }
-    }
-?>
