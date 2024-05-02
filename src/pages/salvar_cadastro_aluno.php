@@ -33,7 +33,7 @@
             if (!mysqli_query($conn,$sql_Insert)) {
                 die("Error: ".mysqli_error($conn));
             }else{
-                newFolder($nome);
+                newFolder($nome,2);
                 echo "<script> 
                 if (confirm('Aluno cadastrado com sucesso! Deseja Logar??')) {
                     window.location.href = '#####';

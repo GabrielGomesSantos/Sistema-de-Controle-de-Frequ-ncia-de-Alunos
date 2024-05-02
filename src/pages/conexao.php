@@ -33,9 +33,25 @@ function leitura(){
 }
 
 function newFolder($nome, $tipo){
-    
-    $diretorio = '../../companies'; 
+
+    //Nome
     $nomeDiretorio = $nome;
+
+    //Condicao para nome do arquivo
+    
+    switch ($tipo){ 
+
+        //Tipo 1 == Empresas
+        case 1:
+            $diretorio = '../../companies'; 
+            break;
+
+        //Tipo 2 == Alunos 
+        case 2: 
+            $diretorio = '../../alunos'; 
+            break;
+    }
+    
 
     if (!is_dir($diretorio . '/' . $nomeDiretorio)) {
         if (mkdir($diretorio . '/' . $nomeDiretorio, 0777)) {
@@ -53,15 +69,15 @@ function criarRelatorio($empresa) {
 
     $diretorioBase = "../../companies/{$empresa}";
 
-    $caminhoDiretorio = $diretorioBase . '/';
+    $diretorioBase = $diretorioBase . '/';
 
     // Restaura o locale padrão
     setlocale(LC_TIME, '');
 
     // Verifica se o diretório já existe
-    if (!is_dir($caminhoDiretorio)) {
+    if (!is_dir($diretorioBase)) {
 
-        if (mkdir($caminhoDiretorio, 0777, true)) { 
+        if (mkdir($diretorioBase, 0777, true)) { 
 
             // Define o locale para português do Brasil
             setlocale(LC_TIME, 'pt_BR.utf8');
@@ -77,7 +93,7 @@ function criarRelatorio($empresa) {
             // Restaura o locale padrão
             setlocale(LC_TIME, '');
              
-            $pdfDestino = $caminhoDiretorio . $nomeRelatorio; 
+            $pdfDestino = $diretorioBase . $nomeRelatorio; 
         
             if (file_exists($arquivo)) {
                 if (copy($arquivo, $pdfDestino)) {
@@ -109,7 +125,7 @@ function criarRelatorio($empresa) {
         setlocale(LC_TIME, '');
         
         $arquivo = '../../assets/relatorios/Relatorio Modelo.pdf'; 
-        $pdfDestino = $caminhoDiretorio . $nomeRelatorio; 
+        $pdfDestino = $diretorioBase . $nomeRelatorio; 
     
         if (file_exists($arquivo)) {
             if (copy($arquivo, $pdfDestino)) {
@@ -122,5 +138,76 @@ function criarRelatorio($empresa) {
         }
 
     }
+}
+
+function criarJustificativa($aluno){
+
+    //Diretorio
+
+    $diretorioBase = "../../aluno/{$aluno}/justificativas/";
+
+        // Define o locale para português do Brasil
+        setlocale(LC_TIME, 'pt_BR.utf8');
+
+        // Verifica se o diretório já existe
+        if (!is_dir($diretorioBase)) {
+    
+            if (mkdir($diretorioBase, 0777, true)) { 
+    
+                // Define o locale para português do Brasil
+                setlocale(LC_TIME, 'pt_BR.utf8');
+    
+                // Obtém o nome do mês e o ano atual
+                $nomeMes = strftime('%B'); // %B retorna o nome completo do mês
+                $ano = date('Y'); 
+                
+                $nomeRelatorio = "Justificativa_". $nomeMes . '_' . $ano .'.pdf';
+    
+                // Restaura o locale padrão
+                setlocale(LC_TIME, '');
+                 
+                $pdfDestino = $diretorioBase . $nomeRelatorio; 
+            
+                if (file_exists($arquivo)) {
+                    if (copy($arquivo, $pdfDestino)) {
+                        echo 'Arquivo PDF copiado com sucesso para: ' . $pdfDestino;
+                    } else {
+                        echo 'Erro ao copiar o arquivo PDF';
+                    }
+                } else {
+                    echo 'O arquivo PDF original não foi encontrado';
+                }
+            } else {
+                echo 'Erro ao criar o diretório';
+            }
+            
+        } else {
+    
+            echo"Diretorio ja existente <br>";
+    
+            setlocale(LC_TIME, 'pt_BR.utf8');
+    
+            $nomeMes = strftime('%B'); // %B retorna o nome completo do mês
+            $ano = date('Y'); 
+            
+            $nomeRelatorio = "Justificativa_". $nomeMes . '_' . $ano .'.pdf';
+
+            setlocale(LC_TIME, '');
+            
+            $arquivo = '../../assets/relatorios/Relatorio Modelo.pdf'; 
+            $pdfDestino = $diretorioBase . $nomeRelatorio; 
+        
+            if (file_exists($arquivo)) {
+                if (copy($arquivo, $pdfDestino)) {
+                    echo 'Arquivo PDF copiado com sucesso para: ' . $pdfDestino;
+                } else {
+                    echo 'Erro ao copiar o arquivo PDF';
+                }
+            } else {
+                echo 'O arquivo PDF original não foi encontrado';
+            }
+    
+        }
+
 }
 ?>
