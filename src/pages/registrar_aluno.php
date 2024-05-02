@@ -24,7 +24,7 @@
       <div class="formulario">
         <header class="header1"></header>  
 
-        <form action="src/pages/validar_login.php" method="post">
+        <form id="registrationForm" action="src/pages/validar_login.php" method="post" onsubmit="return confirmarSenha()">
 
           <h1>Cadastrar aluno</h1>
 
@@ -38,12 +38,12 @@
           </div>
           <div class="container-senha">
                 <label for="senha">Confirmar senha</label>
-                <input class="inputtext" type="password" id="confirmar_senha" name="senha" placeholder="Insira sua senha" required >
+                <input class="inputtext" type="password" id="confirmar_senha" name="confirmar_senha" placeholder="Confirme sua senha" required >
                 <span class="exibir-senha" onclick="togglePassword2()">Mostrar</span>
           </div>
           
           <div class="buttonsubmit">
-                <input class="submit"type="submit" value="ENTRAR">
+                <input class="submit" type="submit" value="ENTRAR">
                 <div>
                     <p><a href="registrar_aluno.php">Não tem uma conta? Registre-se</a></p>
                 </div>
@@ -76,9 +76,10 @@ function confirmarSenha() {
     var confirmarSenha = document.getElementById('confirmar_senha').value;
 
     if (senha === confirmarSenha) {
-        alert('Senhas coincidem!');
+        return true; // Senhas coincidem, permitir envio do formulário
     } else {
         alert('As senhas não coincidem. Por favor, tente novamente.');
+        return false; // Senhas não coincidem, bloquear envio do formulário
     }
 }
 </script>
