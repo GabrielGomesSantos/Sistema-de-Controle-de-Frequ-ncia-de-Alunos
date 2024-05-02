@@ -6,6 +6,14 @@ function togglePassword() {
         passwordField.type = "password";
     }
 }
+function togglePassword2() {
+    var passwordField = document.getElementById("confirmar_senha");
+    if (passwordField.type === "confirmar_senha") {
+        passwordField.type = "text";
+    } else {
+        passwordField.type = "confirmar_senha";
+    }
+}
 
 function mostrarEmpresa(select) {
     var empresaDropdown = document.getElementById("empresa");
